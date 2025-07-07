@@ -52,7 +52,7 @@ That's it! The challenge begins as soon as the page loads.
 
 ## 🖼️ Screenshot
 
-![Code of the Gods Screenshot]("Screenshot 2025-07-07 at 13-07-33 Code of the Gods Hack the Yugas.png")
+[Code of the Gods Screenshot](Screenshot 2025-07-07 at 13-07-33 Code of the Gods Hack the Yugas.png)
 
 ---
 
