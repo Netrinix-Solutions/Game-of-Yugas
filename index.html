@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code of the Gods: Hack the Yugas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="hud-container">
+            <div class="yuga-display glitch" id="yuga-display">KALI YUGA</div>
+            <div class="power-ups">
+                <div class="power-up" id="trinetra-power">
+                    <div class="power-icon">👁️</div>
+                    <div class="power-count">3</div>
+                    <div class="power-name">Trinetra</div>
+                </div>
+                <div class="power-up" id="sudarshan-power">
+                    <div class="power-icon">🌀</div>
+                    <div class="power-count">1</div>
+                    <div class="power-name">Sudarshan</div>
+                </div>
+                <div class="power-up" id="firewall-power">
+                    <div class="power-icon">🛡️</div>
+                    <div class="power-count">1</div>
+                    <div class="power-name">Firewall Buster</div>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+                <div class="progress-text">Mantras Recovered: <span id="mantra-count">0</span>/12</div>
+            </div>
+        </div>
+        
+        <div class="terminal-container">
+            <div class="terminal-output" id="terminal-output"></div>
+            <div class="terminal-input">
+                <span class="prompt" id="prompt">root@kali-yuga:~$ </span>
+                <input type="text" id="command-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            </div>
+        </div>
+        
+        <div class="modal" id="intro-modal">
+            <div class="modal-content">
+                <h1 class="glitch" data-text="CODE OF THE GODS">CODE OF THE GODS</h1>
+                <h2>HACK THE YUGAS</h2>
+                <p>In this cyber-mythic adventure, you are a digital sage tasked with recovering sacred mantras stolen by demonic AI entities across the four cosmic ages.</p>
+                <p>Navigate through:</p>
+                <ul>
+                    <li>Kali Yuga: The dark net ruled by Kali Asura</li>
+                    <li>Dvapara Yuga: Blockchain realms of crypto overlords</li>
+                    <li>Treta Yuga: Cyber Lanka's data fortress</li>
+                    <li>Satya Yuga: The pure code dimension</li>
+                </ul>
+                <button id="start-game">BEGIN JOURNEY</button>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="bg-music" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="success-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="power-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-magic-spell-675.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>

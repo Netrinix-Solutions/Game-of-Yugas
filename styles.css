@@ -1,0 +1,319 @@
+:root {
+    --kali-color: #ff3366;
+    --dvapara-color: #33ffcc;
+    --treta-color: #ffcc33;
+    --satya-color: #ffffff;
+    --terminal-bg: rgba(10, 10, 20, 0.9);
+    --terminal-text: #00ffaa;
+    --terminal-border: #00ffaa33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    height: 100vh;
+    overflow: hidden;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(255, 0, 100, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(0, 255, 200, 0.1) 0%, transparent 20%);
+}
+
+.game-container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.hud-container {
+    width: 250px;
+    padding: 20px;
+    border-left: 1px solid var(--terminal-border);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(0, 0, 30, 0.7);
+}
+
+.terminal-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: var(--terminal-bg);
+    border-right: 1px solid var(--terminal-border);
+}
+
+.yuga-display {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--kali-color);
+    text-shadow: 0 0 10px var(--kali-color);
+    margin-bottom: 20px;
+}
+
+.power-ups {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.power-up {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--terminal-border);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.power-up:hover {
+    background: rgba(0, 255, 170, 0.1);
+}
+
+.power-icon {
+    font-size: 1.5rem;
+}
+
+.power-count {
+    min-width: 20px;
+    text-align: center;
+}
+
+.power-name {
+    flex: 1;
+}
+
+.progress-container {
+    margin-top: auto;
+}
+
+.progress-bar {
+    height: 10px;
+    background: linear-gradient(to right, var(--kali-color), var(--dvapara-color), var(--treta-color), var(--satya-color));
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 0%;
+    transition: width 0.5s;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.terminal-output {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    color: var(--terminal-text);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.terminal-input {
+    display: flex;
+    padding: 10px 20px;
+    border-top: 1px solid var(--terminal-border);
+    align-items: center;
+}
+
+.prompt {
+    color: var(--kali-color);
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+#command-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--terminal-text);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.1rem;
+    outline: none;
+    caret-color: var(--terminal-text);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background: var(--terminal-bg);
+    border: 1px solid var(--terminal-border);
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal-content h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 4rem;
+    color: var(--kali-color);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.modal-content h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    color: var(--dvapara-color);
+    margin-bottom: 30px;
+}
+
+.modal-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.modal-content ul {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.modal-content li {
+    margin-bottom: 10px;
+}
+
+#start-game {
+    background: var(--kali-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+#start-game:hover {
+    background: #ff0044;
+    transform: scale(1.05);
+}
+
+/* Glitch effect */
+.glitch {
+    position: relative;
+}
+
+.glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch::before {
+    color: #0ff;
+    z-index: -1;
+    animation: glitch-effect 3s infinite;
+}
+
+.glitch::after {
+    color: #f0f;
+    z-index: -2;
+    animation: glitch-effect 2s infinite reverse;
+}
+
+@keyframes glitch-effect {
+    0% { transform: translate(0); }
+    20% { transform: translate(-3px, 3px); }
+    40% { transform: translate(-3px, -3px); }
+    60% { transform: translate(3px, 3px); }
+    80% { transform: translate(3px, -3px); }
+    100% { transform: translate(0); }
+}
+
+/* Terminal text effects */
+.command {
+    color: #ff5555;
+}
+
+.response {
+    color: var(--terminal-text);
+    margin: 10px 0;
+}
+
+.success {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+    animation: pulse 0.5s;
+}
+
+.error {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+.system {
+    color: #aaa;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Power-up effects */
+.trinetra-active {
+    animation: trinetra-pulse 0.5s infinite alternate;
+}
+
+@keyframes trinetra-pulse {
+    0% { box-shadow: 0 0 5px #00ffff; }
+    100% { box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+}
+
+.sudarshan-active {
+    animation: sudarshan-spin 1s linear infinite;
+}
+
+@keyframes sudarshan-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Yuga-specific styles */
+.kali-yuga {
+    --primary-color: var(--kali-color);
+}
+
+.dvapara-yuga {
+    --primary-color: var(--dvapara-color);
+}
+
+.treta-yuga {
+    --primary-color: var(--treta-color);
+}
+
+.satya-yuga {
+    --primary-color: var(--satya-color);
+}
