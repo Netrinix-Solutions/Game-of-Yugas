@@ -1,46 +1,39 @@
-# 🕉️ Game of Yugas
+# 🔱 Code of the Gods: Hack the Yugas
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https.img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-"Game of Yugas" is an interactive web application inspired by the Hindu cosmological concept of the four ages: Satya Yuga, Treta Yuga, Dvapara Yuga, and Kali Yuga. This project aims to provide an engaging, educational experience, potentially through a quiz or narrative game, that explores the virtues and characteristics of each Yuga.
-
-The game is built with a modern frontend stack, leveraging **React** and **Vite** for a fast, responsive, and scalable user experience.
+**"Code of the Gods: Hack the Yugas"** is a Capture The Flag (CTF) style web challenge. Your mission is to navigate through the four cosmic ages of Hindu mythology—Satya, Treta, Dvapara, and Kali—by solving puzzles and finding hidden flags. This project is built entirely with vanilla **HTML, CSS, and JavaScript**, proving that complex challenges can be created with fundamental web technologies.
 
 ---
 
 ## 🚀 About The Project
 
-This project serves as both a learning tool and an entertaining game. It is designed to guide users through the cyclical nature of time in Hindu cosmology, where each Yuga represents a progressive decline in moral and physical states, culminating in the dissolution and recreation of the world.
+This project is a hands-on web security challenge designed for beginners and enthusiasts. It tests your skills in client-side exploration, code analysis, and creative problem-solving. Each "Yuga" presents a unique puzzle, requiring you to think like a hacker to uncover the secrets hidden within the code.
 
 ### Key Features:
-* **Interactive Gameplay**: Engages users with questions or choices related to the Yugas.
-* **Educational Content**: Provides insights into the philosophy and characteristics of each age.
-* **Dynamic UI**: A clean and responsive interface built with React.
-* **Fast Development**: Utilizes Vite for a rapid development server and optimized builds.
+* **CTF-Style Puzzles**: Engaging challenges that require you to inspect elements, analyze scripts, and uncover hidden information.
+* **Thematic Story**: A compelling narrative based on the four Yugas of Hindu cosmology.
+* **Zero Dependencies**: Runs in any modern web browser with no setup or installation required.
+* **Lightweight & Fast**: Built with pure HTML, CSS, and JS for instant loading.
 
 ---
 
 ## 🛠️ Built With
 
-This project is built using modern web technologies:
+This project was created using only the core technologies of the web:
 
-* [**React.js**](https.reactjs.org/): A JavaScript library for building user interfaces.
-* [**Vite**](https.vitejs.dev/): A next-generation frontend tooling that provides a faster and leaner development experience.
-* **HTML5 & CSS3**: For structure and styling.
+* [**HTML5**](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+* [**CSS3**](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [**Vanilla JavaScript**](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ---
 
 ## ⚙️ Getting Started
 
-To get a local copy up and running, please follow these simple steps.
-
-### Prerequisites
-
-You need to have **Node.js** and **npm** (or yarn) installed on your local machine. You can download them from [nodejs.org](https.nodejs.org/).
-
-### Installation
+To play the game, you don't need any complex setup. Just follow these steps:
 
 1.  **Clone the repository:**
     ```sh
@@ -50,38 +43,31 @@ You need to have **Node.js** and **npm** (or yarn) installed on your local machi
     ```sh
     cd Game-of-Yugas
     ```
-3.  **Install NPM packages:**
-    ```sh
-    npm install
-    ```
-4.  **Run the development server:**
-    ```sh
-    npm run dev
-    ```
-    This will start the development server, typically on `http://localhost:5173`.
+3.  **Open the main file in your browser:**
+    Simply open the `index.html` file in your favorite web browser (like Chrome, Firefox, or Edge).
+
+That's it! The challenge begins as soon as the page loads.
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Screenshot
 
-*(This is where you should add your project screenshot!)*
+![Code of the Gods Screenshot](./"Screenshot 2025-07-07 at 13-07-33 Code of the Gods Hack the Yugas.png")
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Found a bug or have an idea for a new puzzle? Contributions are welcome! Please feel free to fork the repository and submit a pull request.
 
 1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+2.  Create your Feature Branch (`git checkout -b feature/NewPuzzle`)
+3.  Commit your Changes (`git commit -m 'Add some NewPuzzle'`)
+4.  Push to the Branch (`git push origin feature/NewPuzzle`)
 5.  Open a Pull Request
 
 ---
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See the `LICENSE` file for more information.
